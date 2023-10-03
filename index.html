@@ -3,48 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network & Cybersecurity Quiz</title>
+    <title>Zinia Job Card</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Network & Cybersecurity Quiz</h1>
+        <h1>Zinia Job Card - Delivery Note</h1>
     </header>
 
-    <section id="quiz">
-        <h2>Quiz Questions</h2>
-        <form id="quiz-form">
-            <!-- Your quiz questions and options go here -->
-            <div class="question">
-                <p>1. What does VPN stand for?</p>
-                <label>
-                    <input type="radio" name="q1" value="a"> Virtual Private Network
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="b"> Very Private Network
-                </label>
-            </div>
-            <div class="question">
-                <p>2. What is a firewall used for?</p>
-                <label>
-                    <input type="radio" name="q2" value="a"> Blocking physical access to a network
-                </label>
-                <label>
-                    <input type="radio" name="q2" value="b"> Filtering network traffic to prevent unauthorized access
-                </label>
-            </div>
-            <!-- Add more questions here -->
+    <section id="delivery-form">
+        <h2>Delivery Information</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
 
-            <button type="button" id="start-quiz">Start Quiz</button>
-            <button type="button" id="submit-quiz">Submit</button>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required><br><br>
+
+            <label for="company">Company Details:</label>
+            <input type="text" id="company" name="company" required><br><br>
+
+            <label for="equipment">Equipment Delivered:</label>
+            <textarea id="equipment" name="equipment" rows="4" required></textarea><br><br>
+
+            <label for="ticket-number">Ticket Number:</label>
+            <input type="text" id="ticket-number" name="ticket_number"><br><br>
+
+            <label for="job-description">Job Completed Description:</label>
+            <textarea id="job-description" name="job_description" rows="4"></textarea><br><br>
+
+            <button type="submit">Submit</button>
         </form>
-        <div id="quiz-results"></div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Network & Cybersecurity Quiz</p>
+        <p>&copy; 2023 Zinia Job Card</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

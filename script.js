@@ -1,17 +1,40 @@
-// JavaScript for handling the quiz and interactivity
-document.addEventListener("DOMContentLoaded", function () {
-    const quizForm = document.getElementById("quiz-form");
-    const quizResults = document.getElementById("quiz-results");
-    const submitButton = document.getElementById("submit-quiz");
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+}
 
-    quizForm.addEventListener("submit", function (e) {
-        e.preventDefault();
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
 
-        // Calculate the quiz score here based on user's answers
+#quiz {
+    padding: 20px;
+    text-align: left;
+}
 
-        // Display the quiz score or feedback to the user
-        quizResults.innerHTML = "Your score: X/Y"; // Replace X/Y with the actual score
-    });
+.question {
+    margin-bottom: 15px;
+}
 
-    // Add any additional JavaScript for interactivity here
-});
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#quiz-results {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Add more CSS styles for your website's appearance */

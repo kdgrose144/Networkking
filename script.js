@@ -1,40 +1,31 @@
-/* Add your CSS styles here */
-body {
-    font-family: Arial, sans-serif;
-}
+// JavaScript for handling the quiz and interactivity
+document.addEventListener("DOMContentLoaded", function () {
+    const quizForm = document.getElementById("quiz-form");
+    const startButton = document.getElementById("start-quiz");
+    const submitButton = document.getElementById("submit-quiz");
+    const quizResults = document.getElementById("quiz-results");
 
-header {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
+    let quizStarted = false;
 
-#quiz {
-    padding: 20px;
-    text-align: left;
-}
+    startButton.addEventListener("click", function () {
+        quizStarted = true;
+        startButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+    });
 
-.question {
-    margin-bottom: 15px;
-}
+    quizForm.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-}
+        if (!quizStarted) {
+            alert("Please click 'Start Quiz' to begin.");
+            return;
+        }
 
-button:hover {
-    background-color: #0056b3;
-}
+        // Calculate the quiz score here based on user's answers
 
-#quiz-results {
-    margin-top: 20px;
-    font-weight: bold;
-}
+        // Display the quiz score or feedback to the user
+        quizResults.innerHTML = "Your score: X/Y"; // Replace X/Y with the actual score
+    });
 
-/* Add more CSS styles for your website's appearance */
+    // Add any additional JavaScript for interactivity here
+});

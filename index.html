@@ -3,67 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Knowledge</title>
+    <title>Network & Cybersecurity Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Cybersecurity Knowledge</h1>
+        <h1>Network & Cybersecurity Quiz</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#lessons">Lessons</a></li>
-            <li><a href="#quiz">Quiz</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="home">
-        <h2>Welcome to Cybersecurity Knowledge</h2>
-        <p>Explore our resources to enhance your knowledge of cybersecurity.</p>
-    </section>
-
-    <section id="lessons">
-        <h2>Cybersecurity Lessons</h2>
-        <p>Take interactive lessons to understand various aspects of cybersecurity.</p>
-    </section>
-
     <section id="quiz">
-        <h2>Test Your Knowledge</h2>
-        <p>Answer the following questions to assess your cybersecurity knowledge:</p>
+        <h2>Quiz Questions</h2>
         <form id="quiz-form">
             <!-- Your quiz questions and options go here -->
             <div class="question">
-                <p>1. What is phishing?</p>
+                <p>1. What does VPN stand for?</p>
                 <label>
-                    <input type="radio" name="q1" value="a"> A type of fishing
+                    <input type="radio" name="q1" value="a"> Virtual Private Network
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="b"> An email scam
+                    <input type="radio" name="q1" value="b"> Very Private Network
+                </label>
+            </div>
+            <div class="question">
+                <p>2. What is a firewall used for?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> Blocking physical access to a network
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="c"> A cyber-attack
+                    <input type="radio" name="q2" value="b"> Filtering network traffic to prevent unauthorized access
                 </label>
             </div>
             <!-- Add more questions here -->
 
+            <button type="button" id="start-quiz">Start Quiz</button>
             <button type="button" id="submit-quiz">Submit</button>
         </form>
         <div id="quiz-results"></div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or feedback, please contact us.</p>
-        <form id="contact-form">
-            <!-- Contact form fields go here -->
-        </form>
-    </section>
-
     <footer>
-        <p>&copy; 2023 Cybersecurity Knowledge</p>
+        <p>&copy; 2023 Network & Cybersecurity Quiz</p>
     </footer>
 
     <script src="script.js"></script>

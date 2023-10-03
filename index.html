@@ -3,41 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zinia Job Card</title>
+    <title>Snakes and Ladders Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Zinia Job Card - Delivery Note</h1>
+        <h1>Snakes and Ladders Game</h1>
     </header>
 
-    <section id="delivery-form">
-        <h2>Delivery Information</h2>
-        <form action="submit.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+    <section id="board">
+        <!-- Game board goes here -->
+    </section>
 
-            <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname" required><br><br>
-
-            <label for="company">Company Details:</label>
-            <input type="text" id="company" name="company" required><br><br>
-
-            <label for="equipment">Equipment Delivered:</label>
-            <textarea id="equipment" name="equipment" rows="4" required></textarea><br><br>
-
-            <label for="ticket-number">Ticket Number:</label>
-            <input type="text" id="ticket-number" name="ticket_number"><br><br>
-
-            <label for="job-description">Job Completed Description:</label>
-            <textarea id="job-description" name="job_description" rows="4"></textarea><br><br>
-
-            <button type="submit">Submit</button>
-        </form>
+    <section id="controls">
+        <button id="roll-dice">Roll Dice</button>
+        <button id="reset-game">Reset Game</button>
     </section>
 
     <footer>
-        <p>&copy; 2023 Zinia Job Card</p>
+        <p>&copy; 2023 Snakes and Ladders Game</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

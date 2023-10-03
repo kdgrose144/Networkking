@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Knowledge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cybersecurity Knowledge</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#lessons">Lessons</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Cybersecurity Knowledge</h2>
+        <p>Explore our resources to enhance your knowledge of cybersecurity.</p>
+    </section>
+
+    <section id="lessons">
+        <h2>Cybersecurity Lessons</h2>
+        <p>Take interactive lessons to understand various aspects of cybersecurity.</p>
+    </section>
+
+    <section id="quiz">
+        <h2>Test Your Knowledge</h2>
+        <p>Answer the following questions to assess your cybersecurity knowledge:</p>
+        <form id="quiz-form">
+            <!-- Your quiz questions and options go here -->
+            <div class="question">
+                <p>1. What is phishing?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> A type of fishing
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> An email scam
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="c"> A cyber-attack
+                </label>
+            </div>
+            <!-- Add more questions here -->
+
+            <button type="button" id="submit-quiz">Submit</button>
+        </form>
+        <div id="quiz-results"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, please contact us.</p>
+        <form id="contact-form">
+            <!-- Contact form fields go here -->
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cybersecurity Knowledge</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
